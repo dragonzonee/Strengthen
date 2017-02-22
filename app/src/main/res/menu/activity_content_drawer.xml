@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_persdata"
+            android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:title="Personal data"/>
+        <item
+            android:id="@+id/nav_running_method1"
+            android:icon="@drawable/ic_directions_run_black_24dp"
+            android:title="Running method 1"/>
+        <item
+            android:id="@+id/nav_running_method2"
+            android:icon="@drawable/ic_directions_walk_black_24dp"
+            android:title="Running method 2"/>
+        <item
+            android:id="@+id/nav_running_method3"
+            android:icon="@drawable/ic_accessibility_black_24dp"
+            android:title="Running method 3"/>
+    </group>
+
+    <item android:title="Historys">
+        <menu>
+            <item
+                android:id="@+id/nav_RM1_history"
+                android:icon="@drawable/ic_menu_send"
+                android:title="RM1 data"/>
+            <item
+                android:id="@+id/nav_RM2_history"
+                android:icon="@drawable/ic_menu_send"
+                android:title="RM2 data"/>
+            <item
+                android:id="@+id/nav_RM3_history"
+                android:icon="@drawable/ic_menu_send"
+                android:title="RM3 data"/>
+        </menu>
+    </item>
+
+</menu>

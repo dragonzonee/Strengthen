@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/runningmethod1_background"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+
+    <!--大数字，用于显示跑步距离-->
+    <TextView
+        android:id="@+id/RM1_tv_current_distance"
+        android:text="0.00"
+        android:textSize="100dp"
+        android:textColor="@color/white"
+        android:layout_width="204dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"/>
+
+    <!--大数字旁斜杠-->
+    <ImageView
+        android:id="@+id/RM1_iv_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@mipmap/slide"
+        android:layout_marginEnd="95dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@+id/RM1_tv_current_distance"
+        android:layout_alignParentEnd="true"/>
+
+    <!--大数字的说明信息-->
+
+    <!--小数字的说明信息-->
+    <TextView
+        android:id="@+id/RM1_tv_goal_distance_annotation"
+        android:text="今日目标:"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="255dp"/>
+
+    <!--小数字，用于显示目标距离-->
+    <TextView
+        android:id="@+id/RM1_tv_goal_distance"
+        android:text="0.00"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RM1_tv_goal_distance_annotation"
+        android:layout_marginTop="-5dp"
+        android:layout_alignEnd="@+id/RM1_tv_goal_distance_annotation"/>
+
+
+
+    <!--平均速度的说明文字-->
+    <TextView
+        android:id="@+id/RM1_tv_average_speed_annotation"
+        android:text="平均速度:"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RM1_tv_average_speed"
+        android:layout_alignStart="@+id/RM1_tv_average_speed"
+        android:layout_marginLeft="3dp"/>
+
+
+
+
+    <!--目标速度-->
+    <TextView
+        android:id="@+id/RM1_tv_target_speed"
+        android:text="0.00"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RM1_tv_average_speed_unit"
+        android:layout_alignBottom="@+id/RM1_tv_average_speed_unit"
+        android:layout_alignEnd="@+id/RM1_tv_current_distance"
+        android:layout_marginRight="48dp"/>
+
+
+    <!--目标速度的说明文字-->
+    <TextView
+        android:id="@+id/RM1_tv_target_speed_annotation"
+        android:text="目标速度:"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RM1_tv_target_speed"
+        android:layout_alignStart="@+id/RM1_tv_target_speed"
+        android:layout_marginLeft="3dp"
+        />
+
+    <!--平均速度的单位-->
+
+    <!--平均速度-->
+    <TextView
+        android:id="@+id/RM1_tv_average_speed"
+        android:text="0.00"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_below="@+id/RM1_tv_goal_distance"
+        android:layout_marginLeft="30dp"
+        />
+
+    <!--目标速度的单位-->
+    <TextView
+        android:id="@+id/RM1_tv_target_speed_unit"
+        android:text="Km/h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/RM1_tv_target_speed"
+        android:layout_alignBottom="@+id/RM1_tv_target_speed"
+        android:layout_toEndOf="@+id/RM1_tv_target_speed_annotation"
+        android:layout_marginLeft="5dp"/>
+
+
+    <!--最大速度障碍区-->
+    <TextView
+        android:id="@+id/RM1_Max_distance"
+        android:text="0.00"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RM1_tv_target_speed_unit"
+        android:layout_alignBottom="@+id/RM1_tv_target_speed_unit"
+        android:layout_marginLeft="250dp"/>
+
+    <!--最大速度障碍区的说明文字-->
+    <TextView
+        android:id="@+id/RM1_Max_distance_annotation"
+        android:text="最大速度障碍区："
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RM1_tv_target_speed_annotation"
+        android:layout_alignEnd="@+id/RM1_Max_distance"
+        android:layout_marginRight="-33dp"/>
+
+    <!--最大速度障碍区的单位-->
+    <TextView
+        android:id="@+id/RM1_Max_distance_unit"
+        android:text="Km/h"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RM1_Max_distance"
+        android:layout_alignBottom="@+id/RM1_Max_distance"
+        android:layout_toEndOf="@+id/RM1_Max_distance"/>
+
+    <!--GO图标-->
+    <ImageView
+        android:id="@+id/RM1_go"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/go1"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <!--pause图标-->
+    <ImageView
+        android:id="@+id/RM1_pause"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/pause"
+        android:layout_alignTop="@+id/RM1_go"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentStart="true"/>
+
+    <!--Stop图标-->
+    <ImageView
+        android:id="@+id/RM1_stop"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/stop"
+        android:layout_alignTop="@+id/RM1_go"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/RM1_tv_average_speed_unit"
+        android:text="Km/h"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RM1_tv_average_speed"
+        android:layout_alignBottom="@+id/RM1_tv_average_speed"
+        android:layout_toEndOf="@+id/RM1_tv_average_speed"/>
+
+    <TextView
+        android:id="@+id/RM1_tv_current_distance_annotation"
+        android:text="已经完成："
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RM1_tv_goal_distance"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/RM1_tv_current_distance"
+        android:layout_marginLeft="5dp"/>
+
+
+</RelativeLayout>
